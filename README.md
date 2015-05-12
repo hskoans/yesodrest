@@ -1,8 +1,16 @@
 # Yesod starter
 
-* Install Haskell Platform
-* Install <a href="https://github.com/calvinchengx/cabalenv">cabalenv utility</a>
-* mkdir `$HS_PROJ_HOME`/yesodrest
-* cd `$HS_PROJ_HOME`/yesodrest
-* git clone git@github.com:hskoans/yesodrest.git .
-* ./start.sh
+This is a simple Yesod starter to help people new to Haskell/Yesod development to get up and running with the minimal fuss. We use Haskell Platform to simplify setting up our base Haskell compilers and dependencies.  We also use the `cabal sandbox` command line utility (which is included in Haskell Platform) to manage project-level dependencies.
+
+And we use Kenneth Reitz's awesome `autoenv` to ensure that we set the correct environment variables and PATH whenever we cd into our project directory.
+
+* Install Haskell Platform: <a href="https://www.haskell.org/platform/" target="_blank">https://www.haskell.org/platform/</a>
+* Install Kenneth Reitz's `autoenv`: <a href="https://github.com/kennethreitz/autoenv" target="_blank">https://github.com/kennethreitz/autoenv</a>
+* `mkdir YOUR_PROJ_DIR`
+* `curl https://raw.githubusercontent.com/hskoans/yesodrest/master/.env`
+* `cd .` and go for coffee (`.env` commands will run to set up all the dependencies Yesod needs)
+* Meanwhile, if you don't want coffee, you can make use of the lengthy compilation time to set up postgresql db accordingly, including creating your postgresql user, password
+* Whenever the yesod source files becomes available, update `config/settings.yml` to use your postgresql db, user, password
+* Run `yesod devel` to start the dev server at default port 3000
+
+Your end-state of running the above steps should give you a project repository just like this one.
