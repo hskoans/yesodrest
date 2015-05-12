@@ -14,7 +14,7 @@ This is a simple Yesod starter to help people new to Haskell/Yesod development t
 ```
 mkdir YOUR_PROJ_DIR  # Use whatever directory/project name of your choice of course
 cd YOUR_PROJ_DIR
-curl https://raw.githubusercontent.com/hskoans/yesodrest/master/.env
+curl -O https://raw.githubusercontent.com/hskoans/yesodrest/master/.env
 cd .
 ```
 * Meanwhile, if you don't want coffee, you can make use of the lengthy compilation time to set up postgresql db accordingly, including creating your postgresql user, password
