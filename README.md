@@ -1,8 +1,12 @@
 # Yesod starter
 
-This is a simple Yesod starter to help people new to Haskell/Yesod development to get up and running with the minimal fuss. We use Haskell Platform to simplify setting up our base Haskell compilers and dependencies.  We also use the `cabal sandbox` command line utility (which is included in Haskell Platform) to manage project-level dependencies.
+This is a simple Yesod starter to help people new to Haskell/Yesod development to get up and running with minimal fuss.
 
-And we use Kenneth Reitz's awesome `autoenv` to ensure that we set the correct environment variables and PATH whenever we cd into our project directory.
+1. We use Haskell Platform to simplify setting up our base Haskell compilers and dependencies.
+2. We also use the `cabal sandbox` command line utility (which is included in Haskell Platform) to manage project-level dependencies.
+3. And we use Kenneth Reitz's awesome `autoenv` to ensure that we set the correct environment variables and `PATH` whenever we cd into our project directory.
+
+## Step-by-step
 
 * Install Haskell Platform: <a href="https://www.haskell.org/platform/" target="_blank">https://www.haskell.org/platform/</a>
 * Install Kenneth Reitz's `autoenv`: <a href="https://github.com/kennethreitz/autoenv" target="_blank">https://github.com/kennethreitz/autoenv</a>
