@@ -10,9 +10,13 @@ This is a simple Yesod starter to help people new to Haskell/Yesod development t
 
 * Install Haskell Platform: <a href="https://www.haskell.org/platform/" target="_blank">https://www.haskell.org/platform/</a>
 * Install Kenneth Reitz's `autoenv`: <a href="https://github.com/kennethreitz/autoenv" target="_blank">https://github.com/kennethreitz/autoenv</a>
-* `mkdir YOUR_PROJ_DIR`
-* `curl https://raw.githubusercontent.com/hskoans/yesodrest/master/.env`
-* `cd .` and go for coffee (`.env` commands will run to set up all the dependencies Yesod needs)
+* Run this and go for coffee (`.env` commands will run to set up all the dependencies Yesod needs); it will ask you a few questions in the middle though
+```
+mkdir YOUR_PROJ_DIR  # Use whatever directory/project name of your choice of course
+cd YOUR_PROJ_DIR
+curl https://raw.githubusercontent.com/hskoans/yesodrest/master/.env
+cd .
+```
 * Meanwhile, if you don't want coffee, you can make use of the lengthy compilation time to set up postgresql db accordingly, including creating your postgresql user, password
 * Whenever the yesod source files becomes available, update `config/settings.yml` to use your postgresql db, user, password
 * Run `yesod devel` to start the dev server at default port 3000
